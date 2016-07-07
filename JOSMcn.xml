@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets
   xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-  author="fdulezi"
-  version="1"
-  description="Some presets use in China"
-  zh_CN.description="中国地区使用的预设"
-  shortdescription="China Presets"
-  link=""
-  baselanguage="zh_CN">
+  author="http://openstreetmap.tw/"
+  version="34"
+  description="Some presets only use in Taiwan region"
+  zh_TW.description="一些只有臺灣才有的預設組合"
+  shortdescription="Taiwan Only"
+  link="https://github.com/OsmHackTW/josm-presets"
+  baselanguage="zh_TW">
 
 <!--Some notes-->
   <!--Special Thanks!!!
   Many thanks to people who edit and discuss together on the hackpad:
   https://osmhackpad.com/tag-RmL5fQsiMGp
-  Taiwan Presets:
-  https://raw.githubusercontent.com/OsmHackTW/josm-presets/master/TaiwanOnly.xml
+  -->
+  <!--Presets Reference
+  1."taiwan_chain_store" from osm.tw/mcdlee
+    source url:https://github.com/OsmHackTW/taiwan_chain_store
   -->
 
 <!--Templates-->
@@ -27,52 +29,44 @@
 
 <!--=====chunks=====-->
   <chunk id="addr">
-    <key key="addr:country" value="CN" />
-    <text key="addr:postcode" text="邮政编码" />
+    <key key="addr:country" value="TW" />
+    <text key="addr:postcode" text="郵遞區號" />
+    <label text="底部有中華郵政3+2郵遞區號查詢頁面連結" />
     <text key="addr:full" text="地址" />
-    <label text="请填入完整中文地址，国家免填。" />
-    <link href="http://www.cpdc.com.cn/web/ />
+    <label text="請填入完整中文地址，國家免填。" />
+    <link href="http://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" />
   </chunk>
   <chunk id="addr_detail">
     <!--addr ref:
-    https://wiki.openstreetmap.org/wiki/WikiProject_China#Road_Types
+    https://wiki.openstreetmap.org/wiki/WikiProject_Taiwan/Taiwan_tagging#Addresses_and_place_names_.5BProposed.5D
     -->
     <label text="請填入地址，有疑問請參照底部OSM Wiki連結。" icon="styles/standard/service/post_office.png" />
-    <text key="addr:postcode" text="邮政编码" />
-    <key key="addr:country" value="CN" />
-    <combo key="addr:province" text="省、(直辖)市、自治区" values_searchable="true">
-      <list_entry value="北京" display_value="北京" />
-      <list_entry value="上海" display_value="上海" />
-      <list_entry value="广东" display_value="广东" />
-      <list_entry value="河北" display_value="河北" />
-      <list_entry value="河南" display_value="河南" />
-      <list_entry value="黑龙江" display_value="黑龙江" />
-      <list_entry value="吉林" display_value="吉林" />
-      <list_entry value="辽宁" display_value="辽宁" />
-      <list_entry value="山东" display_value="山东" />
-      <list_entry value="山西" display_value="南投縣" />
-      <list_entry value="陕西" display_value="雲林縣" />
-      <list_entry value="宁夏" display_value="嘉義市" />
-      <list_entry value="内蒙古" display_value="嘉義縣" />
-      <list_entry value="新疆" display_value="臺南市" />
-      <list_entry value="西藏" display_value="高雄市" />
-      <list_entry value="四川" display_value="屏東縣" />
-      <list_entry value="重庆" display_value="宜蘭縣" />
-      <list_entry value="湖南" display_value="花蓮縣" />
-      <list_entry value="湖北" display_value="臺東縣" />
-      <list_entry value="广西" display_value="澎湖縣" />
-      <list_entry value="贵州" display_value="金門縣" />
-      <list_entry value="云南" display_value="連江縣" />
-      <list_entry value="福建" display_value="辽宁" />
-      <list_entry value="浙江" display_value="辽宁" />
-      <list_entry value="江西" display_value="金門縣" />
-      <list_entry value="海南" display_value="連江縣" />
-      <list_entry value="江苏" display_value="辽宁" />
-      <list_entry value="安徽" display_value="辽宁" />
-      <list_entry value="甘肃" display_value="金門縣" />
-      <list_entry value="香港" display_value="連江縣" />
-      <list_entry value="澳门" display_value="辽宁" />
-      <list_entry value="台湾" display_value="辽宁" />
+    <text key="addr:postcode" text="郵遞區號" />
+    <label text="(底部有中華郵政3+2郵遞區號查詢頁面連結)" />
+    <key key="addr:country" value="TW" />
+    <combo key="addr:state" text="縣、(直轄)市" values_searchable="true">
+      <list_entry value="基隆市" display_value="基隆市" />
+      <list_entry value="臺北市" display_value="臺北市" />
+      <list_entry value="新北市" display_value="新北市" />
+      <list_entry value="桃園縣" display_value="桃園縣" />
+      <list_entry value="新竹市" display_value="新竹市" />
+      <list_entry value="新竹縣" display_value="新竹縣" />
+      <list_entry value="苗栗縣" display_value="苗栗縣" />
+      <list_entry value="臺中市" display_value="臺中市" />
+      <list_entry value="彰化縣" display_value="彰化縣" />
+      <list_entry value="南投縣" display_value="南投縣" />
+      <list_entry value="雲林縣" display_value="雲林縣" />
+      <list_entry value="嘉義市" display_value="嘉義市" />
+      <list_entry value="嘉義縣" display_value="嘉義縣" />
+      <list_entry value="臺南市" display_value="臺南市" />
+      <list_entry value="高雄市" display_value="高雄市" />
+      <list_entry value="屏東縣" display_value="屏東縣" />
+      <list_entry value="宜蘭縣" display_value="宜蘭縣" />
+      <list_entry value="花蓮縣" display_value="花蓮縣" />
+      <list_entry value="臺東縣" display_value="臺東縣" />
+      <list_entry value="澎湖縣" display_value="澎湖縣" />
+      <list_entry value="金門縣" display_value="金門縣" />
+      <list_entry value="連江縣" display_value="連江縣" />
     </combo>
     <text key="addr:district" text="區" />
     <text key="addr:city" text="鄉、鎮、市" />
@@ -202,7 +196,7 @@
       <text text="營運公司" key="operator" />
       <combo text="存款" key="cash_in" value="yes,no" editable="false" />
     </item>
-    <group name="便利店"
+    <group name="便利商店"
       icon="presets/convenience.png">
       <item name="7-11" type="node,closedway">
         <key key="brand" value="7-ELEVEn" />
@@ -210,17 +204,16 @@
         <label text="新增或編輯一家 7-ELEVEn" />
         <reference ref="convenience" />
       </item>
-      <item name="全家" type="node,closedway">
+      <item name="全家便利商店" type="node,closedway">
         <key key="brand" value="全家便利商店" />
         <key key="operator" value="全家便利商店股份有限公司" />
         <label text="新增或編輯一家全家便利商店" />
         <reference ref="convenience" />
       </item>
-      <item name="罗森" type="node,closedway">
-        <key key="brand" value="罗森" />
-        <key key="name:en" value="LAWSON" />
-        <key key="operator" value="" />
-        <label text="新增或編輯一家罗森" />
+      <item name="萊爾富" type="node,closedway">
+        <key key="brand" value="萊爾富" />
+        <key key="operator" value="萊爾富國際股份有限公司" />
+        <label text="新增或編輯一家萊爾富" />
         <reference ref="convenience" />
       </item>
       <item name="OK·MART" type="node,closedway">
