@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets
+  xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="fdulezi"
+  version="1"
+  description="Some presets use in China"
+  zh_CN.description="中国地区使用的预设"
+  shortdescription="China Presets"
+  link=""
+  baselanguage="zh_CN">
+
+
+<!--=====chunks=====-->
+
+  <!-- chunks made for particular sets -->
+  <chunk id="convenience">
+    <key key="shop" value="convenience" />
+    <text key="name" text="店名" />
+    <reference ref="addr" />
+    <reference ref="wheelchair" />
+    <reference ref="atm" />
+    <reference ref="open_hours" />
+  </chunk>
+
+
+<!--=====Groups=====-->
+  <!--This is a test area for new items
+
+  -->
+  <separator/>
+
+  <group name="連鎖商家" >
+
+    <group name="便利店"
+      icon="presets/convenience.png">
+      <item name="7-11" type="node,closedway">
+        <key key="brand" value="7-ELEVEn" />
+        <key key="operator" value="統一超商股份有限公司" />
+        <label text="新增或編輯一家 7-ELEVEn" />
+        <reference ref="convenience" />
+      </item>
+      <item name="全家" type="node,closedway">
+        <key key="brand" value="全家便利商店" />
+        <key key="operator" value="全家便利商店股份有限公司" />
+        <label text="新增或編輯一家全家便利商店" />
+        <reference ref="convenience" />
+      </item>
+      <item name="罗森" type="node,closedway">
+        <key key="brand" value="罗森" />
+        <key key="name:en" value="LAWSON" />
+        <key key="operator" value="" />
+        <label text="新增或編輯一家罗森" />
+        <reference ref="convenience" />
+      </item>
+      <item name="OK·MART" type="node,closedway">
+        <key key="brand" value="OK·MART" />
+        <key key="operator" value="來來超商股份有限公司" />
+        <label text="新增或編輯一家OK·MART" />
+        <reference ref="convenience" />
+      </item>
+    </group>
+    <group name="超市"
+      icon="styles/standard/shop/supermarket.svg">
+      <item name="全聯" type="node,closedway">
+        <key key="brand" value="全聯福利中心" />
+        <key key="operator" value="全聯實業股份有限公司" />
+        <label text="新增或編輯一家全聯" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="美廉社" type="node,closedway">
+        <key key="brand" value="美廉社" />
+        <key key="operator" value="三商行股份有限公司家購事業部" />
+        <label text="新增或編輯一家美廉社" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="楓康" type="node,closedway">
+        <key key="brand" value="台灣楓康超市" />
+        <key key="operator" value="台灣楓康超市股份有限公司" />
+        <label text="新增或編輯一家楓康" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="頂好" type="node,closedway">
+        <key key="brand" value="頂好" />
+        <key key="operator" value="惠康百貨股份有限公司" />
+        <label text="新增或編輯一家頂好" />
+        <reference ref="supermarket" />
+      </item>
+      <item name="松青超市" type="node,closedway">
+        <key key="brand" value="松青超市" />
+        <key key="operator" value="松青商業股份有限公司" />
+        <label text="新增或編輯一家松青超市" />
+        <reference ref="supermarket" />
+      </item>
+    </group>
+
+  <separator/>
+</presets>
